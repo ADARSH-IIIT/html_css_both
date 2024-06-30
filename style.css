@@ -66,13 +66,13 @@ body{
 
 .row1{
     flex: 0.1;
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
 }
 
 .row2{
     flex: 0.8;
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
 
 }
@@ -80,7 +80,7 @@ body{
 .row3{
     flex: 0.1;
 
-    background-color: white ;
+    /* background-color: white ; */
     width: 100%;
 
 }
@@ -89,7 +89,7 @@ body{
 
 .row11{
 
-    background-color: red;
+    /* background-color: red; */
     height: 100%;
     flex: 0.2;
 
@@ -120,7 +120,7 @@ body{
 
 .row12{
 
-    background-color: green;
+    /* background-color: green; */
     height: 100%;
     flex: 0.8;
 
@@ -160,13 +160,13 @@ body{
 .row21{
     flex: 0.5;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .row22{
     flex: 0.5;
     height: 100%;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 
@@ -201,7 +201,7 @@ body{
 
 .row31,.row32,.row33{
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     flex: 0.1;
     justify-content: center;
     align-items: center;
@@ -212,7 +212,25 @@ body{
 .row3>div>i{
     font-size: 1rem;
     color: white;
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
+
+
+
+
+@media screen and (max-width : 500px) {
+
+
+.row3>div>i{
+    font-size: 0.6rem;
+}
+}
+
 
 @media screen and (max-width : 800px) {
 
@@ -246,9 +264,13 @@ body{
     gap: 5%;
 }
 
+.row124{
+    display: none;
+}
 
-.row121,.row122,.row123,.row124{
-    background-color: red;
+
+.row121,.row122,.row123, .row124{
+    /* background-color: red; */
     /* height: 100%; */
     /* flex: 0.1; */
 
@@ -267,16 +289,17 @@ body{
     transition: all .2s linear;
 
     text-transform: capitalize;
+    text-decoration: none;
 
     
 }
 
-.row121:hover ,.row122:hover ,.row123:hover {
+.row121:hover ,.row122:hover ,.row123:hover ,.row124:hover {
 
     color: aqua;
     cursor: pointer;
+    transform: scale(1.2);
 }
-
 
 
 
@@ -285,11 +308,6 @@ body{
     display: none;
 }
 
-
-.row124>i{
-    font-size: 0.8rem;
-
-}
 
 
 
@@ -302,13 +320,222 @@ body{
 }
 
 .row124{
-
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+}
+
+
+
+.row21{
+    gap: 2%;
+}
+
+
+.row211{
+    /* background-color: pink; */
+    width: 90%;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: 'Exo 2' , roboto;
+    font-size: 1.5rem;
     display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    align-items: center;
+    color: white;
+}
+
+
+@media screen and (max-width : 1500px) {
+
+    .row211{
+        font-size: 1rem;
+    }
+    
 }
 
 
 
+@media screen and (max-width : 500px) {
+
+    .row211{
+        font-size: 1rem;
+    }
+    
 }
 
+
+.row212{
+    /* background-color: pink; */
+    width: 90%;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: 'Exo 2' , roboto;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    align-items: center;
+    color: aqua;
+
+
+}
+
+.row213{
+    /* background-color: pink; */
+    width: 90%;
+    color: white;
+    font-size: 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    align-items: center;
+    font-family: 'Exo 2' , roboto;
+    font-style: 400;
+
+    
+
+
+}
+
+.row214{
+    /* background-color: pink; */
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    align-items: center;
+    gap: 5% ;
+
+}
+
+.row2141{
+    background-color: rgb(15, 182, 182);
+    
+    
+}
+
+
+
+.row2141>a , .row2142>a{
+    transition: all 0.2s linear;
+
+
+}
+
+.row2141>a:hover , .row2142>a:hover{
+    /* transition: all 0.2s linear; */
+
+    scale: 1.2;
+
+
+}
+
+
+
+
+.row2142{
+    /* background-color: blue; */
+    /* height: 90%; */
+    border: 2px solid rgb(15, 182, 182);
+    transition: all 0.2s linear;
+
+
+    
+
+   
+}
+
+
+.row214>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 5%;
+    border-radius: 15px;
+}
+
+.row214>div>a{
+    font-size: 0.5rem;
+    text-decoration: none;
+    /* color: white; */
+    font-family: 'Exo 2' , roboto;
+    font-weight: 800;
+}
+
+.row2141>a{
+    color: var(--main_color);
+    /* color: red; */
+
+}
+
+.row2142>a{
+    color: rgb(15, 182, 182);
+    
+    /* color: red; */
+
+}
+
+
+.row22{
+    /* background-color: red; */
+    justify-content: flex-start;
+}
+
+
+.row221{
+    /* background-color: yellow; */
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    border: 5px solid rgb(15, 182, 182);
+    overflow: hidden;
+
+    transition: transform 0.5s linear;
+    
+}
+
+.row221:hover{
+
+    transform: rotateY(180deg);
+
+}
+
+
+
+.row221>img{
+
+    height: 110%;
+    width: 100%;
+}
+
+
+.row3>a>i{
+    overflow: hidden;
+
+}
+
+.row3>a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.row3>a>i{
+    transition: all 0.2s linear;
+
+
+}
+
+
+
+.row3>a>i:hover{
+    color: aqua;
+    transform: scale(1.2);
+}
